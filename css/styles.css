@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+
+/*=======================
+       Global Styles
+========================*/
+
+:root {
+  --color-primary: #474550;
+  --color-secondary: #f86f4c;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+/*=======================
+       HEADER
+========================*/
+
+#header {
+  margin-top: 1rem;
+  padding-block: 3rem;
+  border-bottom: 1px solid black;
+  box-shadow: 0 2px 20px black;
+  width: 50%;
+  max-width: 65rem;
+  min-width: 48rem;
+  margin-inline: auto;
+}
+
+.header__title {
+  font-size: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  position: relative;
+  width: 100%;
+  color: white;
+}
+
+/*=======================
+          NAV
+========================*/
+
+#nav {
+  padding-block: 3rem;
+  padding-bottom: 6rem;
+  display: grid;
+  place-items: center;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  color: white;
+}
+
+.nav__list--link {
+  font-size: 2.3rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav__list--link div {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.1s ease-in;
+}
+
+.nav__list--link div.underline {
+  border-bottom: 1px solid var(--color-secondary);
+
+  opacity: 1;
+  width: 70%;
+  margin-inline: auto;
+}
+
+.divider {
+  border-right: 1px solid hsl(211, 12%, 48%);
+  height: 4rem;
+}
+
+/*=======================
+         CONTAINER
+========================*/
+
+.container {
+  width: 100%;
+  margin-bottom: 10rem;
+}
+
+/*=======================
+         PROJECTS
+========================*/
+
+#projects {
+  display: grid;
+  place-items: center;
+  margin-inline: auto;
+  row-gap: 3rem;
+  width: 90%;
+}
+
+.projects__box {
+  width: 40rem;
+  height: 35rem;
+  display: grid;
+  place-items: center;
+}
+
+.projects__images {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.projects__images:hover {
+  transform: scale(1.1);
+}
+
+.projects__headings {
+  text-align: center;
+  font-family: "Paytone One", sans-serif;
+  font-size: 2rem;
+  width: 70%;
+  padding-top: 1rem;
+  margin-inline: auto;
+}
+
+#projects .desktop-img {
+  height: 25rem;
+  width: 100%;
+  box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+#projects .mobile-img {
+  display: none;
+}
+
+/*=======================
+         ABOUT ME
+========================*/
+
+#about-me {
+  margin-top: 3rem;
+  width: 100%;
+  position: relative;
+  display: none;
+}
+
+.about-me__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 4rem;
+  width: 70%;
+  margin-inline: auto;
+  position: relative;
+}
+
+.about-me__info {
+  text-align: center;
+  font-size: 1.7rem;
+  color: white;
+}
+
+.about-me__img-container {
+  width: 30rem;
+  height: 30rem;
+  position: relative;
+}
+
+.about-me__img-container::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-secondary);
+  top: 6%;
+  left: 6%;
+  border-radius: 2rem;
+  z-index: -1;
+}
+
+.about-me__img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  border-radius: 2rem;
+}
+
+/*=====================================
+              FOOTER
+=====================================*/
+
+#footer {
+  padding-block: 1.5vh;
+  padding-inline: 1rem;
+  width: 100%;
+  background: black;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__skills {
+  font-size: 4rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer__skills .fa-brands {
+  -webkit-text-stroke: 1px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer__skills .fa-html5 {
+  -webkit-text-stroke-color: #ff5733;
+}
+
+.footer__skills .fa-css3-alt {
+  -webkit-text-stroke-color: #2965f1;
+}
+
+.footer__skills .fa-js {
+  -webkit-text-stroke-color: #f0db4f;
+}
+
+.footer__skills .fa-html5::after,
+.footer__skills .fa-css3-alt::after {
+  content: "";
+  position: absolute;
+  height: 60%;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  z-index: -1;
+}
+
+.footer__skills .fa-js::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 60%;
+  width: 70%;
+  bottom: 10%;
+  right: 5%;
+  z-index: -1;
+}
+
+.footer__email {
+  font-size: 1.8rem;
+  max-width: 30rem;
+}
+
+.footer__email a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__email .fa-envelope {
+  font-size: 2rem;
+  color: var(--color-secondary);
+}
+
+/*=====================================
+              KEYFRAMES
+=====================================*/
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*=====================================
+              MEDIA QUERIES
+=====================================*/
+
+/*---------------------------------
+          MIN WIDTH: 700px 
+-----------------------------------*/
+
+@media only screen and (min-width: 700px) {
+  .about-me__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 10%;
+    width: 80%;
+    height: 40rem;
+  }
+
+  .about-me__info {
+    text-align: left;
+    min-width: 30rem;
+    width: 50%;
+  }
+
+  #footer {
+    justify-content: center;
+    gap: 25%;
+  }
+
+  .footer__skills {
+    font-size: 5rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: 18rem;
+    gap: 2rem;
+  }
+
+  .footer__email {
+    font-size: 2rem;
+  }
+
+  .footer__email .fa-envelope {
+    font-size: 3rem;
+  }
+}
+
+/*---------------------------------
+          MIN WIDTH: 1100px 
+-----------------------------------*/
+
+@media only screen and (min-width: 1100px) {
+  #projects {
+    margin-inline: auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    min-width: 105rem;
+    row-gap: 6rem;
+  }
+
+  .projects__images {
+    position: relative;
+  }
+
+  #projects .mobile-img {
+    display: block;
+    position: absolute;
+    height: 18rem;
+    width: 30%;
+    top: 80%;
+    right: -35%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .about-me__info {
+    max-width: 50rem;
+  }
+}
