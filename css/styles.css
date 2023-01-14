@@ -198,6 +198,37 @@ h2 {
   color: white;
 }
 
+.about-me__skills {
+  font-size: 5rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-block: 5rem;
+  gap: 2rem;
+}
+
+.about-me__skills .fa-brands {
+  -webkit-text-stroke: 1px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-me__skills .fa-html5 {
+  -webkit-text-stroke-color: #ff5733;
+}
+
+.about-me__skills .fa-css3-alt {
+  -webkit-text-stroke-color: #2965f1;
+}
+
+.about-me__skills .fa-js {
+  -webkit-text-stroke-color: #f0db4f;
+}
+
+.about-me__skills .fa-github {
+  -webkit-text-stroke-color: white;
+}
+
 .about-me__img-container {
   width: 30rem;
   height: 30rem;
@@ -235,58 +266,8 @@ h2 {
   background: black;
   text-align: center;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer__skills {
-  font-size: 4rem;
-  color: black;
-  display: flex;
   justify-content: center;
-  gap: 1.5rem;
-}
-
-.footer__skills .fa-brands {
-  -webkit-text-stroke: 1px;
-  position: relative;
-  z-index: 1;
-}
-
-.footer__skills .fa-html5 {
-  -webkit-text-stroke-color: #ff5733;
-}
-
-.footer__skills .fa-css3-alt {
-  -webkit-text-stroke-color: #2965f1;
-}
-
-.footer__skills .fa-js {
-  -webkit-text-stroke-color: #f0db4f;
-}
-
-.footer__skills .fa-html5::after,
-.footer__skills .fa-css3-alt::after {
-  content: "";
-  position: absolute;
-  height: 60%;
-  width: 60%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: black;
-  z-index: -1;
-}
-
-.footer__skills .fa-js::after {
-  content: "";
-  position: absolute;
-  background-color: black;
-  height: 60%;
-  width: 70%;
-  bottom: 10%;
-  right: 5%;
-  z-index: -1;
+  align-items: center;
 }
 
 .footer__email {
@@ -343,6 +324,11 @@ h2 {
     text-align: left;
     min-width: 30rem;
     width: 50%;
+  }
+
+  .about-me__skills {
+    justify-content: start;
+    margin-top: 6rem;
   }
 
   #footer {
