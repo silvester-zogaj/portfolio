@@ -127,7 +127,7 @@ h2 {
   place-items: center;
   margin-inline: auto;
   row-gap: 3rem;
-  width: 90%;
+  width: 85%;
 }
 
 .projects__box {
@@ -135,19 +135,6 @@ h2 {
   height: 35rem;
   display: grid;
   place-items: center;
-}
-
-.projects__images {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-
-.projects__images:hover {
-  transform: scale(1.1);
 }
 
 .projects__headings {
@@ -159,15 +146,24 @@ h2 {
   margin-inline: auto;
 }
 
+.projects__thumbnails {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.projects__thumbnails:hover {
+  transform: scale(1.1);
+}
+
 #projects .desktop-img {
   height: 25rem;
   width: 100%;
   box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.5);
   object-fit: cover;
-}
-
-#projects .mobile-img {
-  display: none;
 }
 
 /*=======================
@@ -209,24 +205,9 @@ h2 {
 
 .about-me__skills .fa-brands {
   -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: white;
   position: relative;
   z-index: 1;
-}
-
-.about-me__skills .fa-html5 {
-  -webkit-text-stroke-color: #ff5733;
-}
-
-.about-me__skills .fa-css3-alt {
-  -webkit-text-stroke-color: #2965f1;
-}
-
-.about-me__skills .fa-js {
-  -webkit-text-stroke-color: #f0db4f;
-}
-
-.about-me__skills .fa-github {
-  -webkit-text-stroke-color: white;
 }
 
 .about-me__img-container {
@@ -260,8 +241,7 @@ h2 {
 =====================================*/
 
 #footer {
-  padding-block: 1.5vh;
-  padding-inline: 1rem;
+  padding-block: 1rem;
   width: 100%;
   background: black;
   text-align: center;
@@ -331,11 +311,6 @@ h2 {
     margin-top: 6rem;
   }
 
-  #footer {
-    justify-content: center;
-    gap: 25%;
-  }
-
   .footer__skills {
     font-size: 5rem;
     color: black;
@@ -369,20 +344,8 @@ h2 {
     row-gap: 6rem;
   }
 
-  .projects__images {
+  .projects__thumbnails {
     position: relative;
-  }
-
-  #projects .mobile-img {
-    display: block;
-    position: absolute;
-    height: 18rem;
-    width: 30%;
-    top: 80%;
-    right: -35%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.5);
   }
 
   .about-me__info {
