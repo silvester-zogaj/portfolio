@@ -1,1 +1,1 @@
-Portofolio holding my front-end web development projects. As well as an about me page.
+Portofolio holding my front-end web development projects and an about me page. My email is also included, and it is located in the footer.
