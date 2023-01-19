@@ -325,6 +325,11 @@ h2 {
     width: 50%;
   }
 
+  .about-me__img-container {
+    margin-top: -5rem;
+    min-width: 28rem;
+  }
+
   .about-me__skills {
     justify-content: start;
     margin-top: 6rem;
