@@ -120,7 +120,7 @@ h2 {
 
 .container {
   width: 100%;
-  /* margin-bottom: 10rem; */
+  margin-bottom: 10rem;
 }
 
 /*=======================
@@ -208,6 +208,8 @@ h2 {
   align-items: center;
   row-gap: 4rem;
   width: 70%;
+  height: 100rem;
+  background: red;
   margin-inline: auto;
   position: relative;
 }
