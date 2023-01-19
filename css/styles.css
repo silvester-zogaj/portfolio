@@ -29,6 +29,11 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 h2 {
   font-weight: 400;
 }
@@ -135,6 +140,7 @@ h2 {
   height: 35rem;
   display: grid;
   place-items: center;
+  margin-bottom: 8rem;
 }
 
 .projects__headings {
@@ -144,6 +150,7 @@ h2 {
   width: 70%;
   padding-top: 1rem;
   margin-inline: auto;
+  margin-bottom: 2rem;
 }
 
 .projects__thumbnails {
@@ -152,11 +159,6 @@ h2 {
   justify-content: space-evenly;
   align-items: flex-end;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-
-.projects__thumbnails:hover {
-  transform: scale(1.1);
 }
 
 #projects .desktop-img {
@@ -164,6 +166,28 @@ h2 {
   width: 100%;
   box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.5);
   object-fit: cover;
+}
+
+.projects__links-box {
+  width: 60%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.projects__links {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: 1px solid var(--color-secondary);
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.projects__links:hover {
+  background-color: var(--color-secondary);
 }
 
 /*=======================
@@ -253,11 +277,6 @@ h2 {
 .footer__email {
   font-size: 1.8rem;
   max-width: 30rem;
-}
-
-.footer__email a {
-  text-decoration: none;
-  color: white;
 }
 
 .footer__email .fa-envelope {
