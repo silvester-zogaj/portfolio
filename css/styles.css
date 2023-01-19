@@ -199,6 +199,7 @@ h2 {
   width: 100%;
   position: relative;
   display: none;
+  height: 40rem;
 }
 
 .about-me__container {
@@ -265,6 +266,7 @@ h2 {
 =====================================*/
 
 #footer {
+  margin-top: 10rem;
   padding-block: 1rem;
   width: 100%;
   background: black;
@@ -326,7 +328,7 @@ h2 {
   }
 
   .about-me__img-container {
-    /* margin-top: -5rem; */
+    margin-top: -5rem;
     min-width: 28rem;
   }
 
