@@ -20,6 +20,7 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
@@ -27,6 +28,7 @@ body {
   color: var(--color-secondary);
   background-color: var(--color-primary);
   font-family: "Montserrat Alternates", sans-serif;
+  height: 100%;
 }
 
 a {
@@ -208,8 +210,6 @@ h2 {
   align-items: center;
   row-gap: 4rem;
   width: 70%;
-  height: 100rem;
-  background: red;
   margin-inline: auto;
   position: relative;
 }
