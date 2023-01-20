@@ -27,9 +27,9 @@ body {
   color: var(--color-secondary);
   background-color: var(--color-primary);
   font-family: "Montserrat Alternates", sans-serif;
-  /* min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
-  flex-direction: column; */
+  flex-direction: column;
 }
 
 a {
@@ -276,7 +276,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: auto; */
+  justify-self: flex-end;
 }
 
 .footer__email {
