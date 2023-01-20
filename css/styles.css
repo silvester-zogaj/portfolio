@@ -20,6 +20,7 @@
 
 html {
   font-size: 62.5%;
+  height: 100%; /* To keep footer from floating up */
 }
 
 body {
@@ -27,7 +28,7 @@ body {
   color: var(--color-secondary);
   background-color: var(--color-primary);
   font-family: "Montserrat Alternates", sans-serif;
-  min-height: 100vh;
+  min-height: 100%; /* To keep footer from floating up */
   display: flex;
   flex-direction: column;
 }
