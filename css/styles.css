@@ -27,6 +27,7 @@ body {
   color: var(--color-secondary);
   background-color: var(--color-primary);
   font-family: "Montserrat Alternates", sans-serif;
+  min-height: 100vh;
 }
 
 a {
@@ -273,6 +274,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
 }
 
 .footer__email {
