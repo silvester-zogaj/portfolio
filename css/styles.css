@@ -20,7 +20,8 @@
 
 html {
   font-size: 62.5%;
-  height: 100%; /* To keep footer from floating up */
+  /* height: 100%; */
+  /* To keep footer from floating up */
 }
 
 body {
@@ -28,7 +29,8 @@ body {
   color: var(--color-secondary);
   background-color: var(--color-primary);
   font-family: "Montserrat Alternates", sans-serif;
-  min-height: 100%; /* To keep footer from floating up */
+  /* min-height: 100%;  */
+  /* To keep footer from floating up */
   display: flex;
   flex-direction: column;
 }
@@ -277,7 +279,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: auto;
+  justify-self: flex-end;
 }
 
 .footer__email {
