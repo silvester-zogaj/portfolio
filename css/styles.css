@@ -27,7 +27,6 @@ body {
   color: var(--color-secondary);
   background-color: var(--color-primary);
   font-family: "Montserrat Alternates", sans-serif;
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
 }
