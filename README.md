@@ -2,4 +2,3 @@ My portfolio holding my front-end web development projects with links directing 
 
 
 
-stuff stuff stuff
