@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
 
 /*=======================
        Global Styles
@@ -28,7 +28,7 @@ html {
 body {
   color: var(--color-secondary);
   background-color: var(--color-primary);
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,8 +55,7 @@ h2 {
 #header {
   margin-top: 1rem;
   padding-block: 2rem;
-  box-shadow: 10px 15px 15px 0px
-    rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.5);
   width: 100%;
   margin-inline: auto;
   background-color: var(--color-primary-light);
@@ -67,7 +66,7 @@ h2 {
   text-align: center;
   font-size: calc(3rem + 1vw);
   text-transform: uppercase;
-  font-family: 'Paytone One', sans-serif;
+  font-family: "Paytone One", sans-serif;
   font-weight: 400;
   position: relative;
   width: 100%;
@@ -149,7 +148,7 @@ h2 {
 
 .projects__headings {
   text-align: center;
-  font-family: 'Paytone One', sans-serif;
+  font-family: "Paytone One", sans-serif;
   font-size: 2rem;
   width: 70%;
   padding-top: 1rem;
@@ -168,8 +167,7 @@ h2 {
 #projects .desktop-img {
   height: 35rem;
   width: 100%;
-  box-shadow: 10px 15px 15px 0px
-    rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.5);
   object-fit: cover;
 }
 
