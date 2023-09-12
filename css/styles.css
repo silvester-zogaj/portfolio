@@ -244,7 +244,7 @@ h2 {
   margin-top: auto;
   padding-block: 1rem;
   width: 100%;
-  background: black;
+  background: rgba(0, 0, 0, 0.349);
   text-align: center;
   display: flex;
   justify-content: center;
